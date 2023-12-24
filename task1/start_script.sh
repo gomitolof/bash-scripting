@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Hello, World!" >> /tmp/mylog.txt
-# Aggiungi altri comandi del tuo script qui
+touch "/home/gomitolof/Desktop/strickgnak.txt"
+echo "strickgnack" >> /home/gomitolof/Desktop/strickgnak.txt
