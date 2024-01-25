@@ -1,0 +1,95 @@
+------------------------------------------------ www.facebook.com SSL Certificate ------------------------------------------------
+
+subject
++---------------------+----------------------+
+|      Attribute      |        Value         |
++---------------------+----------------------+
+|     countryName     |          US          |
+| stateOrProvinceName |      California      |
+|     localityName    |      Menlo Park      |
+|   organizationName  | Meta Platforms, Inc. |
+|      commonName     |    *.facebook.com    |
++---------------------+----------------------+
+
+
+issuer
++------------------------+----------------------------------------+
+|       Attribute        |                 Value                  |
++------------------------+----------------------------------------+
+|      countryName       |                   US                   |
+|    organizationName    |              DigiCert Inc              |
+| organizationalUnitName |            www.digicert.com            |
+|       commonName       | DigiCert SHA2 High Assurance Server CA |
++------------------------+----------------------------------------+
+
++-----------+-------+
+| Attribute | Value |
++-----------+-------+
+|  version  |   3   |
++-----------+-------+
+
++--------------+----------------------------------+
+|  Attribute   |              Value               |
++--------------+----------------------------------+
+| serialNumber | 02B5A0A1ABF5319AEBE2D22CEB86A203 |
++--------------+----------------------------------+
+
++-----------+--------------------------+
+| Attribute |          Value           |
++-----------+--------------------------+
+| notBefore | Nov  4 00:00:00 2023 GMT |
++-----------+--------------------------+
+
++-----------+--------------------------+
+| Attribute |          Value           |
++-----------+--------------------------+
+|  notAfter | Feb  2 23:59:59 2024 GMT |
++-----------+--------------------------+
+
+
+subjectAltName
++-----------+------------------+
+| Attribute |      Value       |
++-----------+------------------+
+|    DNS    |  *.facebook.com  |
+|    DNS    |  *.facebook.net  |
+|    DNS    |   *.fbcdn.net    |
+|    DNS    |   *.fbsbx.com    |
+|    DNS    | *.m.facebook.com |
+|    DNS    | *.messenger.com  |
+|    DNS    |  *.xx.fbcdn.net  |
+|    DNS    |  *.xy.fbcdn.net  |
+|    DNS    |  *.xz.fbcdn.net  |
+|    DNS    |   facebook.com   |
+|    DNS    |  messenger.com   |
++-----------+------------------+
+
+
+OCSP
++-----------+--------------------------+
+| Attribute |          Value           |
++-----------+--------------------------+
+|    OCSP   | http://ocsp.digicert.com |
++-----------+--------------------------+
+
+
+caIssuers
++-----------+-------------------------------------------------------------------+
+| Attribute |                               Value                               |
++-----------+-------------------------------------------------------------------+
+| caIssuers | http://cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt |
++-----------+-------------------------------------------------------------------+
+
+
+crlDistributionPoints
++-----------------------+------------------------------------------------+
+|       Attribute       |                     Value                      |
++-----------------------+------------------------------------------------+
+| crlDistributionPoints | http://crl3.digicert.com/sha2-ha-server-g6.crl |
+| crlDistributionPoints | http://crl4.digicert.com/sha2-ha-server-g6.crl |
++-----------------------+------------------------------------------------+
+
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQR06VS/pBXRM73DPg5n6mIpb245g
+TyItkW2UuGwEStpxTswKGnNjFAEsgMjf5AdwSERzb2Gr5Suf8+1gLXde+Q==
+-----END PUBLIC KEY-----
