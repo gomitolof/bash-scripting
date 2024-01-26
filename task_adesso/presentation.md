@@ -9,6 +9,16 @@ il certificato viene spedito al client. Il browser ha una lista di SubCAs trusta
 e anche quella di facebook (nel certificato). Quindi riesce a fare il validation dell'issuer SubCA (digicert), e lucchetto verde viene
 mostrato.
 
+tipologia di certificati:
+
+certificati server (e.g., chiedi a facebook te li fornisce e client verifica l'autenticità del server)
+
+certificati client (usati dal server per autenticare il client)
+
+certificati client-server (usati da server ma che può essere anche client)
+
+wildcard certificate (possono essere rilasciati sia client che server, esempio *.facebook.com nel commonName-SubjectAlternativeName)
+
 # CAMPI DI UN CERTIFICATO
 
 subject commonName most important because it is used to recognize one identity on the web. It is the certificate owner
@@ -41,11 +51,6 @@ scambiate delle ephimeral keys per crittografare le sessioni. Certificati usati 
 usate per scambiarsi informazioni.
 
 openssl x509 -inform der -in SwissSign_RSA_TLS_OV_ICA_2021_-_1.ca -outform pem -out SwissSign_RSA_TLS_OV_ICA_2021_-_1.pem
+
 openssl x509 -in ./SwissSign_RSA_TLS_OV_ICA_2021_-_1.ca -noout -text
 
-tipologia di certificati:
-
-certificati server (e.g., chiedi a facebook te li fornisce e client verifica l'autenticità del server)
-certificati client (usati dal server per autenticare il client)
-certificati client-server (usati da server ma che può essere anche client)
-wildcard certificate (possono essere rilasciati sia client che server, esempio *.facebook.com nel commonName-SubjectAlternativeName)

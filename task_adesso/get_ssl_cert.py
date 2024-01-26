@@ -33,7 +33,6 @@ def read_certificate(hostname, port=443):
     # Load a certificate (X509) from the string cert_bin encoded with the type crypto.FILETYPE_ASN1.
     # The format used by FILETYPE_ASN1 is also sometimes referred to as DER (binary).
     x509 = crypto.load_certificate(crypto.FILETYPE_ASN1, cert_bin)
-
     return cert_txt, x509.get_pubkey().to_cryptography_key()
 
 def print_certificate(certificate, url):
@@ -80,8 +79,8 @@ def get_public_key(cert_path):
     return public_key
 
 if __name__ == "__main__":
-    # url = input('Insert an url: ')
-    url = "www.facebook.com"
+    url = input('Insert an url: ')
+    # url = "www.facebook.com"
     ssl_port = 443  # SSL default port is 443
 
     cert_txt, pub_key = read_certificate(url, ssl_port)
@@ -92,6 +91,5 @@ if __name__ == "__main__":
             encoding=serialization.Encoding.PEM,
             format=serialization.PublicFormat.SubjectPublicKeyInfo
         )
-        # Decode base64 text of the public key
         print(public_key_text.decode('utf-8'))
 
